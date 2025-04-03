@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import blogRoutes from "./routes/blogRoutes.js";
-const bodyParser = require('body-parser')
+import bodyParser from 'body-parser'
 
 dotenv.config();
 const app = express();
