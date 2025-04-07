@@ -7,7 +7,7 @@ const BlogDetails = () => {
 
   useEffect(() => {
     window.scrollTo(0,0)
-    fetch(`http://localhost:5000/api/blogs/${id}`)
+    fetch(`${import.meta.env.VITE_SERVER_LINK}/api/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBlog(data);

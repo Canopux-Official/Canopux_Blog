@@ -7,7 +7,7 @@ const Blogs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
+    fetch(`${import.meta.env.VITE_SERVER_LINK}/api/blogs`)
       .then((res) => res.json())
       .then((data) => {
         const sortedBlogs = data.sort(
